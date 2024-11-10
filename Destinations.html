@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations - Top Spots</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="bg-primary text-white text-center p-3">
+    <h1>Top Travel Destinations</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Travel Destinations</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Destinations.html">Destinations</a>
+                    </li>
+                </ul>
+                <!-- Кнопка переключения темы -->
+                <button id="theme-toggle" class="btn btn-secondary ms-3">Toggle Theme</button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container mt-4">
+    <section class="explore-section">
+        <h2>Explore These Amazing Places</h2>
+        <p>Here are some top destinations to add to your travel list:</p>
+        
+        <div class="row">
+            <!-- Карточка для Парижа -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="images/paris.jpg" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris, France</h5>
+                        <p class="card-text">Experience the city of lights, famous for its art, history, and the Eiffel Tower.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary learn-more-btn" data-city="paris">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Добавьте дополнительные карты направлений -->
+             <!-- Карточка для Токио -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="images/tokyo.jpg" class="card-img-top" alt="Tokyo">
+                    <div class="card-body">
+                        <h5 class="card-title">Tokyo, Japan</h5>
+                        <p class="card-text">Explore the vibrant city with a mix of traditional culture and modern attractions.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary learn-more-btn" data-city="tokyo">Learn more</button>
+                    </div>
+                </div>
+            </div>
+             <!-- Карточка для Бали -->
+             <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="images/bali.jpg" class="card-img-top" alt="Bali">
+                    <div class="card-body">
+                        <h5 class="card-title">Bali, Indonesia</h5>
+                        <p class="card-text">Relax in paradise with beautiful beaches, vibrant culture, and scenic landscapes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary learn-more-btn" data-city="bali">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка для Милана -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="images/milan.jpg" class="card-img-top" alt="Milan">
+                    <div class="card-body">
+                        <h5 class="card-title">Milan, Italy</h5>
+                        <p class="card-text">Visit the fashion capital of the world, known for its rich history and stunning architecture.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary learn-more-btn" data-city="milan">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка для Нью-Йорка -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="images/newyork.jpg" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">New York, USA</h5>
+                        <p class="card-text">Discover the city that never sleeps, full of iconic landmarks and endless excitement.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary learn-more-btn" data-city="newyork">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="images/sydney.jpg" class="card-img-top" alt="Sydney">
+                    <div class="card-body">
+                        <h5 class="card-title">Sydney, Australia</h5>
+                        <p class="card-text">Enjoy the beautiful harbor, iconic Opera House, and relaxed Australian lifestyle.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary learn-more-btn" data-city="sydney">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="plan-trip-section mt-4">
+        <h2>Plan Your Next Trip</h2>
+        <form action="#" method="post" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label class="form-label" for="name">Name:</label>
+                <input class="form-control" type="text" id="name" name="name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="destination">Choose your destination:</label>
+                <select class="form-select" id="destination" name="destination" required>
+                    <option value="" disabled selected>Select a destination</option>
+                    <option value="paris">Paris</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="bali">Bali</option>
+                    <option value="milan">Milan</option>
+                    <option value="sydney">Sydney</option>
+                    <option value="newyork">NewYork</option>
+                </select>
+                <div class="invalid-feedback">Please select a destination.</div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer class="bg-primary text-white text-center p-3 mt-4">
+    <p>Created by Meiram Shyngyskhan | Date: 2024</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts.js"></script>
+<div id="cityModal" class="modal-overlay">
+    <div class="modal-content">
+        <span id="closeModalBtn" class="close-btn">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+    </div>
+</div>
+</body>
+</html>

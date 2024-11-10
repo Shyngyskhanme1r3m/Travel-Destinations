@@ -1,0 +1,195 @@
+/* Основные стили для дневной темы */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Ночная тема */
+body.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+/* Стили для элементов страницы */
+.date-time-display {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #4682b4;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/* Кнопки и форма */
+button {
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #4682b4;
+    border-color: #4682b4;
+}
+
+.btn-primary:hover {
+    background-color: #315f7d;
+    border-color: #315f7d;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Стили для валидации формы */
+.invalid-feedback {
+    display: none;
+    color: #dc3545;
+}
+
+input:invalid ~ .invalid-feedback,
+select:invalid ~ .invalid-feedback {
+    display: block;
+}
+
+/* Стили для аккордеона */
+.accordion-section h3 {
+    cursor: pointer;
+    background-color: #4682b4;
+    color: #fff;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border-left: 3px solid #4682b4;
+    border-right: 3px solid #4682b4;
+    border-bottom: 3px solid #4682b4;
+}
+
+/* Стили для всплывающего окна (popup) */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Стили для карточек направлений (Destinations page) */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4682b4;
+}
+
+.card-text {
+    color: #333;
+}
+
+/* Футер */
+footer {
+    padding: 15px;
+    background-color: #4682b4;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Медиазапросы для адаптивности */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+    }
+    
+    .card-img-top {
+        height: 150px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
